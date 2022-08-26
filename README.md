@@ -22,7 +22,7 @@ Video preview to come later
 Use
 
 ```
-sudo mv path-to-sdir /usr/bin
+sudo mv path-to-poke /usr/bin
 ```
 
 > If there is a better way of doing this please let me know
@@ -112,7 +112,7 @@ Creates a bash file using
 
 ## Non personal usage 
 
-If you use poke in anything other than a personal useage (i.e. Installing on any computer that isn't your own) please also use
+If you use poke in anything other than a personal useage (i.e. Installing on any computer that isn't your own, etc) please also use
 
 ```
 sudo mv path-to-readme /usr/bin/poke
