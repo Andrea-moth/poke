@@ -1,0 +1,86 @@
+#!/usr/bin/env python
+
+import os
+import typer
+
+app = typer.Typer()
+
+codeFolder = os.path.join(os.path.expanduser("~"), "/Code")
+
+@app.command()
+def py(
+    name=typer.Argument(
+        "main", 
+        help="The name of the file being created",
+        metavar="FileName")):
+    """
+    Creates a python file using __name__ == "__main__"
+    """
+
+    template = '#!/usr/bin/env python\n\ndef main():\n\tpass\n\nif __name__ == "__main__":\n\tmain()'
+
+    if os.path.exists(f"/{name}"):
+        con = typer.confirm(f"File {name} already exists, are you sure you want to overwrite it")
+        if not con:
+            return
+
+    with open(f"./{name}", "w+") as file:
+        file.write(template)
+
+@app.command()
+def c(
+    name=typer.Argument(
+        "main", 
+        help="The name of the file being created",
+        metavar="FileName")):
+    """Creates a C file"""
+
+    template = '#include <stdio.h>\n\nint main(){\n\treturn 0;\n}'
+
+    if os.path.exists(f"./{name}.c"):
+        con = typer.confirm(f"File [{name}] already exists, are you sure you want to overwrite it")
+        if not con:
+            raise typer.Abort()
+
+    with open(f"./{name}.c", "w+") as file:
+        file.write(template)
+
+@app.command()
+def cpp(
+    name=typer.Argument(
+        "main", 
+        help="The name of the file being created",
+        metavar="FileName")
+):
+    """Creates a c++ file"""
+
+    template = '#include <iostream>\n\nint main(){\n\treturn 0;\n}'
+
+    if os.path.exists(f"./{name}.c"):
+        con = typer.confirm(f"File [{name}] already exists, are you sure you want to overwrite it")
+        if not con:
+            raise typer.Abort()
+
+    with open(f"./{name}.cpp", "w+") as file:
+        file.write(template)
+
+@app.command()
+def sh(
+    name=typer.Argument(
+        "main",
+        help="The name of the file being created",
+        metavar="FileName")
+):
+    """Creates a bash script"""
+
+    template = "#!/bin/bash"
+
+    if os.path.exists(f"./{name}"):
+        con = typer.confirm(f"File [{name}] already exists, are you sure you want to overwrite it")
+        if not con:
+            raise typer.Abort()
+    with open(f"./{name}", "w+") as file:
+        file.write(template)
+
+if __name__ == "__main__":
+    app()
