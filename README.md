@@ -13,9 +13,9 @@ Video preview to come later
 
 ## Index
 
-- [Installation](https://github.com/Andrea-moth/poke/edit/main/README.md#installation)
-- [Usage](https://github.com/Andrea-moth/poke/edit/main/README.md#usage)
-- [ToDo](https://github.com/Andrea-moth/poke/edit/main/README.md#todo)
+- [Installation](https://github.com/Andrea-moth/poke/blob/main/README.md#installation)
+- [Usage](https://github.com/Andrea-moth/poke/blob/main/README.md#usage)
+- [ToDo](https://github.com/Andrea-moth/poke/blob/main/README.md#todo)
 
 ## Installation 
 
@@ -29,7 +29,7 @@ sudo mv path-to-poke /usr/bin
 
 > If there is a better way of doing this please let me know
 
-You can then delete the rest of the files, please check the [non personal usage section](https://github.com/Andrea-moth/sdir/main/README.md#non-personal-usage) to see if it applies to you
+You can then delete the rest of the files, please check the [non personal usage section](https://github.com/Andrea-moth/poke/blob/main/README.md#non-personal-usage) to see if it applies to you
 
 ## Usage
 
