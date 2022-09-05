@@ -24,7 +24,7 @@ git clone https://github.com/Andrea-moth/poke
 
 cd poke
 
-sudo mv path-to-poke /usr/bin
+sudo mv poke /usr/bin
 ```
 
 > If there is a better way of doing this please let me know
