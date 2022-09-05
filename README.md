@@ -19,9 +19,11 @@ Video preview to come later
 
 ## Installation 
 
-Use
-
 ```
+git clone https://github.com/Andrea-moth/poke
+
+cd poke
+
 sudo mv path-to-poke /usr/bin
 ```
 
