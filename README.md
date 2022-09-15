@@ -107,6 +107,58 @@ Creates a bash file using
 
 ---
 
+### HTML
+
+Creates a html, css and js file using the structure
+
+project/
+
+├─ Assets/
+
+│  ├─ styling.css
+
+│  ├─ main.js
+
+├─ index.html
+
+```html
+<html>
+	<head>
+		<link rel='stylesheet' href='Assets/styling'>
+		<link rel='stylesheet' href='Assets/main'>
+	</head>
+	<body>
+	</body>
+</html>
+```
+
+```css
+html, body {
+	margin:           0;
+	padding:          0;
+	overflow:         hidden;
+	height:           100%;
+	width:            100%;
+	background-color: rgb(0, 0, 0);
+}
+svg { width: 100%; height: 100%; }
+```
+
+```js
+
+```
+
+##### Arguments
+
+* name (Default: index) ┃ Lets you set the name of the HTML file 
+
+* css (Default: styling) ┃ Lets you set the name of the css file 
+
+* js (Default: main) ┃ Lets you set the name of the js file 
+
+
+---
+
 ## ToDo 
 
 - [ ] Add more languages
